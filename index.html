@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- Link Swiper's CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="./styles.css"
+  />
+</head>
+<body class="body">
+  <main>
+    
+      <header class="header">
+        <img src="" alt="avatar">
+        <div class="header__info">
+          <h3 class="header__info--name">Name</h3>
+          <h4 class="header__info--direction">City, State</h4>
+        </div>
+      </header>
+      <section class="section-img">
+          <!-- Slider main container -->
+        <div class="swiper mySwiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+  
+        </div>
+      </section>
+    
+    <section class="comments">
+      <div class="comments-info-wrapper">
+        <ul class="icons-list">
+          <li class="icons-list__icon like"><img src="./icons/love.png" alt="like icon"></li>
+          <li class="icons-list__icon chat"><img src="./icons/chat (1).png" alt="like icon"></li>
+          <li class="icons-list__icon plane"><img src="./icons/direct-instagram.png" alt="like icon"></li>
+        </ul>
+        
+        <p class="caption"> 
+          <span class="p__span">Photographer's Name</span> 
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora nesciunt reiciendis odio? Numquam officiis quis voluptas sint
+        </p>
+        <div class="comments__container"></div>
+      </div>
+      <form action="" class="comments__add">
+        <input type="text" id="comment" class="comments__add--input">
+        <button type="submit" class="comments__add--button">Post</button>
+      </form>
+    </section>
+  </main>
+
+
+
+  <section class="modal">
+    <h3 class="icons-used-advise">Icons used credits</h3>
+    <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Freepik - Flaticon</a>
+    <a href="https://www.flaticon.com/free-icons/instagram-comment" title="instagram comment icons">Instagram comment icons created by pictranoosa - Flaticon</a>
+
+  <script type="module" src="./sectionImg.js"></script>
+  <script type="module" src="./comments.js"></script>
+<!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
