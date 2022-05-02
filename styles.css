@@ -2,7 +2,8 @@
 
 :root {
   --gray: #E5E5E5;
-  --blue: #3D8AFF
+  --soft-gray: #F1F1F1;
+  --blue: #3D8AFF;
 }
 
 /* font-family: 'Archivo', sans-serif;
@@ -141,15 +142,13 @@ main {
   list-style: none;
   width: 30px;
   margin: 0 6px;
-  
+  position: relative;
 }
 .icons-list__icon img{
   width: 100%;
 }
 
-.like {
-  cursor: pointer;
-}
+
 .chat {
   width: 27px;
 }
@@ -160,6 +159,68 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+.heart-black-lines{
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/* heart icon */
+.heart-red {
+  margin-top: 3px;
+  width: 15px;
+  height: 15px;
+  transform: rotate(45deg);
+  background: red;
+  position: absolute;
+  cursor: pointer;
+  animation: beating 0.3s 1;
+}
+
+.display-none {
+  display: none;
+}
+
+.heart-red:before,
+.heart-red:after {
+  content: "";
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+  
+}
+.heart-red:before {
+  top: 0;
+  left: -9px;
+}
+.heart-red:after {
+  top: -9px;
+}
+
+@keyframes beating {
+  0% {
+  	transform: rotate(45deg) scale(0.9);
+    z-index: 0;
+  }
+  50% {
+    transform: rotate(45deg) scale(1.5);
+    z-index: 2;
+  }
+  100% {
+  	transform: rotate(45deg) scale(1);
+    z-index: 0;
+  }
+}
+
+
+
+
+
+
 
 .p__span {
   font-weight: 600;
@@ -172,7 +233,7 @@ main {
 
 .comments__add {
   padding: 20px 15px;
-  background-color: var(--gray);
+  background-color: var(--soft-gray);
   border-radius: 4px;
 
   display: flex;
@@ -180,7 +241,7 @@ main {
 .comments__add--input,
 .comments__add--button {
   border: none;
-  background-color: var(--gray);
+  background-color: var(--soft-gray);
 }
 .comments__add--input {
   flex-grow: 1;
@@ -189,7 +250,7 @@ main {
   outline: none;
 }
 input:focus {
-  background-color: var(--gray);
+  background-color: var(--soft-gray);
 }
 
 .comments__add--button {
@@ -197,6 +258,12 @@ input:focus {
   font-weight: 700;
   cursor: pointer;
 }
+
+
+
+
+
+
 
 .modal {
   display: none;
