@@ -1,13 +1,13 @@
+/* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,100;1,400&family=Estonia&display=swap');
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Estonia', cursive; */
 
 :root {
   --gray: #E5E5E5;
   --soft-gray: #F1F1F1;
   --blue: #3D8AFF;
 }
-
-/* font-family: 'Archivo', sans-serif;
-font-family: 'Estonia', cursive; */
 
 html{
   margin: 0;
@@ -28,7 +28,6 @@ html{
 }
 
 main {
-  
     max-width: 526px;
     min-height: 701px;
     box-shadow: 0px 10px 8px -8px var(--gray);
@@ -39,6 +38,7 @@ main {
 }
 
 
+/* ------HEADER------ */
 .header {
   display: flex;
   padding: 16px;
@@ -75,14 +75,10 @@ main {
 }
 
 
-
-
-
-
+/* ------PHOTOS------ */
 .section-img {
   position: relative;
 }
-
 .swiper {
   max-width: 526px;
   max-height: 325px;
@@ -113,12 +109,7 @@ main {
 }
 
 
-
-
-
-
-
-
+/* ------COMMENTS AND ICONS------ */
 .comments {
   font-size: 1.2rem;
   padding: 16px;
@@ -132,6 +123,8 @@ main {
   border-top: none;
   border-radius:  0 0 4px 4px;
 }
+
+/* ICONS */
 .icons-list {
   display: flex;
   margin: 0;
@@ -148,7 +141,6 @@ main {
   width: 100%;
 }
 
-
 .chat {
   width: 27px;
 }
@@ -160,14 +152,12 @@ main {
   align-items: center;
 }
 
+/* HEART LIKE */
 .heart-black-lines{
   position: relative;
   z-index: 1;
   cursor: pointer;
 }
-
-
-/* heart icon */
 .heart-red {
   margin-top: 3px;
   width: 15px;
@@ -178,11 +168,9 @@ main {
   cursor: pointer;
   animation: beating 0.3s 1;
 }
-
 .display-none {
   display: none;
 }
-
 .heart-red:before,
 .heart-red:after {
   content: "";
@@ -191,7 +179,6 @@ main {
   border-radius: 50%;
   background: red;
   position: absolute;
-  
 }
 .heart-red:before {
   top: 0;
@@ -216,26 +203,20 @@ main {
   }
 }
 
-
-
-
-
-
-
 .p__span {
   font-weight: 600;
 }
 
+
+/* COMMENTS  */
 /* .comments__container {
   overflow: auto;
   max-height: 110px;
 } */
-
 .comments__add {
   padding: 20px 15px;
   background-color: var(--soft-gray);
   border-radius: 4px;
-
   display: flex;
 }
 .comments__add--input,
@@ -252,19 +233,11 @@ main {
 input:focus {
   background-color: var(--soft-gray);
 }
-
 .comments__add--button {
   color: var(--blue);
   font-weight: 700;
   cursor: pointer;
 }
-
-
-
-
-
-
-
 .modal {
   display: none;
 }

@@ -69,14 +69,4 @@ const printPhotos = async () => {
 };
 printPhotos();
 
-//Like heart.
-const heartRed = document.querySelector(".heart-red");
-const heartBlackLines = document.querySelector(".heart-black-lines");
-heartBlackLines.addEventListener("click", () => {
-  heartRed.classList.toggle("display-none");
-  heartBlackLines.classList.toggle("display-none");
-});
-heartRed.addEventListener("click", () => {
-  heartRed.classList.toggle("display-none");
-  heartBlackLines.classList.toggle("display-none");
-});
+

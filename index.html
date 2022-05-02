@@ -16,32 +16,29 @@
   />
 </head>
 <body class="body">
-  <main>
-    
-      <header class="header">
-        <img src="" alt="avatar">
-        <div class="header__info">
-          <h3 class="header__info--name">Name</h3>
-          <h4 class="header__info--direction">City, State</h4>
+  <main>    
+    <header class="header">
+      <img src="" alt="avatar">
+      <div class="header__info">
+        <h3 class="header__info--name">Name</h3>
+        <h4 class="header__info--direction">City, State</h4>
+      </div>
+    </header>
+    <section class="section-img">
+      <!-- Slider main container -->
+      <div class="swiper mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
         </div>
-      </header>
-      <section class="section-img">
-          <!-- Slider main container -->
-        <div class="swiper mySwiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
-        
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-  
-        </div>
-      </section>
+      </div>
+        <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </section>
     
     <section class="comments">
       <div class="comments-info-wrapper">
@@ -73,10 +70,11 @@
     <h3 class="icons-used-advise">Icons used credits</h3>
     <a href="https://www.flaticon.com/free-icons/send" title="send icons">Send icons created by Freepik - Flaticon</a>
     <a href="https://www.flaticon.com/free-icons/instagram-comment" title="instagram comment icons">Instagram comment icons created by pictranoosa - Flaticon</a>
+  </section>
 
-  <script type="module" src="./sectionImg.js"></script>
-  <script type="module" src="./comments.js"></script>
-<!-- Swiper JS -->
+  <script type="module" src="./getInfo.js"></script>
+  <script type="module" src="./commentsAndLike.js"></script>
+  <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 </html>
